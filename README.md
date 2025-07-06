@@ -6,6 +6,8 @@ To address this issue, we developed a machine learning model to identify clients
 
 To support safe and ethical model development, we created a representative mock dataset that mirrors the structure and behavioural dynamics of the original data. This approach ensures that no sensitive client information is exposed, while still enabling robust model training and evaluation.
 
+Technical Note on Development Environment: The machine learning components of this solution were developed using the Polars package in Python, chosen for its efficiency in handling large datasets and complex data operations.
+
 ### 1. Business Objective
 A machine learning model was developed to help reduce unspent funds by identifying clients who are likely to begin using a new service. It not only predicts which clients are most likely to engage, but also determines the optimal timing to initiate contact. This enables weekly prioritisation of outreach, allowing staff to engage clients in timely, targeted conversations about services that could benefit them. Ultimately, the model supports more effective use of available funding by promoting proactive and personalised service delivery.
 
