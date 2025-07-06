@@ -1,4 +1,6 @@
 # xgboost-polars-classification
+
+## Maximizing Client Well-being: Proactive Funding Engagement Through Machine Learning
 Many clients are allocated funding to support their wellbeing, health, or personal development, but a significant portion of these funds often goes unspent due to a lack of timely engagement. This underutilization not only reduces the impact of these programs but also represents a missed opportunity for clients to access valuable services.
 
 To address this issue, we developed a machine learning model to identify clients who may require a timely reminder about their available funding. The model flags individuals based on their historical funding usage and service engagement patterns—enabling targeted outreach to those most at risk of leaving funds unused. For instance, a wellbeing provider like Smiling Mind (a mental health and mindfulness organization) might use such a system to ensure clients make full use of their allocated support resources.
