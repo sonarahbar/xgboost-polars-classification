@@ -1,6 +1,5 @@
-# xgboost-polars-classification
-
 ## Maximizing Client Well-being: Proactive Funding Engagement Through Machine Learning
+
 Many clients are allocated funding to support their wellbeing, health, or personal development, but a significant portion of these funds often goes unspent due to a lack of timely engagement. This underutilization not only reduces the impact of these programs but also represents a missed opportunity for clients to access valuable services.
 
 To address this issue, we developed a machine learning model to identify clients who may require a timely reminder about their available funding. The model flags individuals based on their historical funding usage and service engagement patterns—enabling targeted outreach to those most at risk of leaving funds unused. For instance, a wellbeing provider like Smiling Mind (a mental health and mindfulness organization) might use such a system to ensure clients make full use of their allocated support resources.
@@ -41,8 +40,6 @@ We opted for a binary classification approach due to data limitations that made 
 5. **Create Binary Target**: Add the result as a new column called `target`.
 6. **Save Data**: Export the enriched dataset for model training.
 
-Here's a refined version of your **3.1 Experimental Setup** section. The flow has been improved for clarity, conciseness, and professional tone while retaining all the technical details:
-
 ---
 
 ### 3. Experimental Setup
@@ -63,8 +60,6 @@ The problem was framed as a **binary classification task**, with the target vari
 
 This setup allowed the model to focus on **identifying timely upsell opportunities**, helping to guide proactive engagement based on the likelihood of new service uptake.
 
-Here’s a refined version of **3.3 Algorithm** and **3.4 Initial Metrics**, with improved clarity and tone, and all numerical values removed as requested:
-
 ---
 
 ### 3.1 Algorithm
@@ -77,7 +72,6 @@ We began with a baseline model using the default configuration of the XGBoost bi
 
 The baseline model demonstrated a reasonable ability to identify clients likely to uptake a new service, providing a useful starting point for further iteration. While the results were encouraging, they also highlighted opportunities for improvement, particularly in optimising precision, recall, and the balance between false positives and false negatives. These insights informed the next phase of model refinement and feature enhancement.
 
-Here’s a refined version of your **3.5 Learnings** and **Final Model (4.1–4.4)** sections with improved structure, clarity, and tone—*and all numerical values removed as requested*:
 
 ---
 
@@ -129,9 +123,6 @@ To better inform the timing of client engagement, we developed a series of model
 This approach allowed us to distinguish between clients who are ready for **immediate outreach** and those who may be more responsive to **early planning or follow-up** in the coming weeks.
 
 While the model for immediate uptake delivered the strongest performance, models targeting further horizons also maintained solid predictive ability. This combination supports both reactive and proactive strategies—enabling staff to prioritise the right clients at the right time and maximise service engagement outcomes.
-
----
-Here's a refined version of **4.5 Calibration Output** and **4.6 Interpretability**, with improved clarity, flow, and professionalism—*and all numerical values removed as requested*:
 
 ---
 
