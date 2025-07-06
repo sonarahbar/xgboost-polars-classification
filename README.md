@@ -2,7 +2,7 @@
 
 Within wellbeing-focused service organisations, clients are often allocated funding to support their mental health, physical wellbeing, or personal development. Despite the availability of these resources, a considerable proportion of allocated funds remains unspent, frequently due to a lack of timely engagement rather than an absence of need. This underutilisation not only limits the effectiveness of support programs but also represents a missed opportunity for clients to access services that could significantly improve their quality of life.
 
-To address this issue, we developed a machine learning model to identify clients who may require a timely reminder about their available funding. The model flags individuals based on their historical funding usage and service engagement patterns—enabling targeted outreach to those most at risk of leaving funds unused. For instance, a wellbeing provider might use such a system to ensure clients make full use of their allocated support resources.
+To address this challenge, we developed a machine learning model designed to identify clients who may require a timely reminder regarding their available funding. The model flags individuals based on their historical funding utilisation and service engagement patterns, enabling targeted and proactive outreach to those most at risk of leaving funds unutilised. This data-driven approach supports service providers in facilitating more effective use of allocated resources and enhancing overall client outcomes.
 
 ---
 
