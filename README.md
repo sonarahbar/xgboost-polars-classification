@@ -1,12 +1,42 @@
 ## Maximizing Client Well-being: Proactive Funding Engagement Through Machine Learning
-
 Many clients are allocated funding to support their wellbeing, health, or personal development, but a significant portion of these funds often goes unspent due to a lack of timely engagement. This underutilization not only reduces the impact of these programs but also represents a missed opportunity for clients to access valuable services.
 
 To address this issue, we developed a machine learning model to identify clients who may require a timely reminder about their available funding. The model flags individuals based on their historical funding usage and service engagement patterns—enabling targeted outreach to those most at risk of leaving funds unused. For instance, a wellbeing provider like Smiling Mind (a mental health and mindfulness organization) might use such a system to ensure clients make full use of their allocated support resources.
 
-To support safe and ethical model development, we created a representative mock dataset that mirrors the structure and behavioural dynamics of the original data. This approach ensures that no sensitive client information is exposed, while still enabling robust model training and evaluation.
+### Methodology
+To ensure safe and ethical model development while accurately mirroring real-world conditions, our methodology focused on robust data simulation and a Python-based machine learning pipeline.
 
-Technical Note on Development Environment: The machine learning components of this solution were developed using the Polars package in Python, chosen for its efficiency in handling large datasets and complex data operations.
+Data Simulation and Ethical Considerations
+A critical first step was the creation of a representative mock dataset. This dataset was meticulously designed to replicate the structure and behavioral dynamics observed in original client data, including patterns of funding allocation, utilization, and service engagement. This approach served several key purposes:
+
+Privacy and Security: By working exclusively with mock data, we ensured that no sensitive client information was exposed or utilized during any stage of model development, training, or evaluation. This upholds the highest standards of data privacy and ethical conduct.
+
+Representativeness: The mock dataset was engineered to faithfully reflect the statistical properties, relationships, and anomalies present in the actual data. This allowed for the development of a model that is robust and applicable to the true operational environment.
+
+Reproducibility: Using a controlled, synthetic dataset facilitates reproducibility of our results and allows for iterative improvements without the complexities of managing live sensitive data.
+
+Machine Learning Model Development
+The core of our solution is a machine learning model designed to predict the likelihood of a client leaving allocated funds unspent. The development process involved:
+
+Feature Engineering: From the mock dataset, features were engineered to capture key indicators of funding usage and service engagement. These included, but were not limited to, historical utilization rates, frequency of service access, time since last engagement, available funding balance, and client demographic proxies (where relevant and non-identifying in the mock data).
+
+Model Selection: Various machine learning algorithms suitable for classification tasks were considered, such as Logistic Regression, Gradient Boosting Machines (e.g., LightGBM, XGBoost), and Random Forests. The final model selection was based on a balance of predictive performance, interpretability, and computational efficiency for potential deployment.
+
+Training and Evaluation: The selected model was trained on the mock dataset, with performance evaluated using standard metrics such as precision, recall, F1-score, and AUC (Area Under the Receiver Operating Characteristic Curve). A hold-out validation set from the mock data was used to ensure the model's generalization capabilities and prevent overfitting.
+
+Technology Stack: The entire machine learning pipeline, from data preparation and feature engineering to model training and evaluation, was developed using Python. Specifically, the Polars package was extensively utilized for its exceptional performance in data manipulation and processing. Polars' memory efficiency and speed in handling large datasets were crucial for rapidly iterating on features and model architectures, significantly contributing to the efficiency of the development process. Other libraries from the Python data science ecosystem, such as scikit-learn for machine learning algorithms and matplotlib/seaborn for visualization, were also employed.
+
+Targeted Outreach Strategy
+The output of the machine learning model is a flag or probability score indicating clients at high risk of underutilizing their funds. This output is designed to facilitate a targeted outreach strategy:
+
+Proactive Reminders: Clients flagged by the model can receive timely reminders about their available funding and the services they can access.
+
+Personalized Engagement: The insights gained from the model can inform more personalized communication, highlighting specific services relevant to the client's historical engagement patterns or identified needs.
+
+Impact Measurement: The system allows providers, such as Smiling Mind, to track the effectiveness of these targeted interventions by monitoring subsequent funding utilization rates among the notified clients.
+
+This comprehensive methodology ensures that the developed solution is not only technically sound and effective in identifying at-risk clients but also adheres to strong ethical principles by prioritizing data privacy through the use of representative mock data.
+
 
 ### 1. Business Objective
 A machine learning model was developed to help reduce unspent funds by identifying clients who are likely to begin using a new service. It not only predicts which clients are most likely to engage, but also determines the optimal timing to initiate contact. This enables weekly prioritisation of outreach, allowing staff to engage clients in timely, targeted conversations about services that could benefit them. Ultimately, the model supports more effective use of available funding by promoting proactive and personalised service delivery.
