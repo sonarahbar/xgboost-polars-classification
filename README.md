@@ -1,6 +1,6 @@
 # Maximizing Client Well-being: Proactive Funding Engagement Through Machine Learning
 
-Many clients are allocated funding to support their wellbeing, health, or personal development, but a significant portion of these funds often goes unspent due to a lack of timely engagement. This underutilization not only reduces the impact of these programs but also represents a missed opportunity for clients to access valuable services.
+Within wellbeing-focused service organisations, clients are often allocated funding to support their mental health, physical wellbeing, or personal development. Despite the availability of these resources, a considerable proportion of allocated funds remains unspent, frequently due to a lack of timely engagement rather than an absence of need. This underutilisation not only limits the effectiveness of support programs but also represents a missed opportunity for clients to access services that could significantly improve their quality of life.
 
 To address this issue, we developed a machine learning model to identify clients who may require a timely reminder about their available funding. The model flags individuals based on their historical funding usage and service engagement patterns—enabling targeted outreach to those most at risk of leaving funds unused. For instance, a wellbeing provider might use such a system to ensure clients make full use of their allocated support resources.
 
